@@ -3,145 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <!-- Google Fonts (Optional) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome (Optional) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1FbFpMxP1dC+f+8xMw7+T9NL7NMGgdHrP++R9GnjPj9ZzgZfE4Bn2FtBFjQJ6yLbKpStcQPw3dzPXjHwK5s0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Python Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <p>Web Developer | Software Engineer | Technology Enthusiast</p>
-            <a href="resume.pdf" download="Your_Name_Resume.pdf" class="btn">Download Resume</a>
-        </div>
-    </header>
-
-    <!-- Navigation Menu -->
-    <nav>
-        <div class="container">
-            <ul class="nav-links">
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+            <button id="theme-toggle" class="button">Toggle Dark Mode</button>
+        </nav>
+    </header>
 
-    <!-- Social Links Section -->
-    <section class="social">
-        <h2>Connect with me</h2>
-        <div class="social-links">
-            <a href="https://wa.me/YOUR_NUMBER" target="_blank">
-                <i class="fab fa-whatsapp fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Your go-to Python Developer</p>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="images/about.jpg" alt="About Me">
+        <p>Hi, I'm a Python developer with a passion for creating efficient and scalable solutions. I love solving real-world problems through code.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <img src="images/skills.jpg" alt="Skills">
+        <div class="skills-grid">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Flask & Django</div>
+            <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">HTML, CSS, JavaScript</div>
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">Git & GitHub</div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill">
-                    <h3>Frontend Development</h3>
-                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
-                </div>
-                <div class="skill">
-                    <h3>Backend Development</h3>
-                    <p>Node.js, Express, Python, Django, PHP</p>
-                </div>
-                <div class="skill">
-                    <h3>Database Management</h3>
-                    <p>MySQL, PostgreSQL, MongoDB</p>
-                </div>
-                <div class="skill">
-                    <h3>Tools & Platforms</h3>
-                    <p>Git, Docker, AWS, Azure</p>
-                </div>
-            </div>
-        </div>
+    <section id="education">
+        <h2>Education</h2>
+        <img src="images/education.jpg" alt="Education">
+        <p>Bachelor's Degree in Computer Science</p>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Master of Science in Computer Science</h3>
-                <p>University Name, Year - Year</p>
-                <p>Description or achievements (optional).</p>
-            </div>
-            <div class="education-item">
-                <h3>Bachelor of Science in Information Technology</h3>
-                <p>University Name, Year - Year</p>
-                <p>Description or achievements (optional).</p>
-            </div>
-        </div>
+    <section id="experience">
+        <h2>Experience</h2>
+        <img src="images/experience.jpg" alt="Experience">
+        <p>Python Developer at XYZ Company (2020 - Present)</p>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Senior Developer at Company Name</h3>
-                <p>2020 - Present</p>
-                <ul>
-                    <li>Led a team of 5 developers to build scalable web applications.</li>
-                    <li>Implemented RESTful APIs using Node.js and Express.</li>
-                    <li>Optimized application performance, reducing load times by 30%.</li>
-                </ul>
+    <section id="projects">
+        <h2>Projects</h2>
+        <img src="images/projects.jpg" alt="Projects">
+        <div class="project-cards">
+            <div class="project-card">
+                <h3>Expense Tracker Web App</h3>
+                <p>A web application for tracking expenses with multiple sources.</p>
+                <a href="#" class="button">View Project</a>
             </div>
-            <div class="experience-item">
-                <h3>Junior Developer at Company Name</h3>
-                <p>2018 - 2020</p>
-                <ul>
-                    <li>Developed responsive UI components with React.</li>
-                    <li>Collaborated with designers to improve user experience.</li>
-                    <li>Maintained codebase and performed regular code reviews.</li>
-                </ul>
+            <div class="project-card">
+                <h3>City Routing System</h3>
+                <p>A routing system that connects 30 cities efficiently.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Flask CRUD Application</h3>
+                <p>A simple CRUD application using Flask and PostgreSQL.</p>
+                <a href="#" class="button">View Project</a>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-list">
-                <div class="project-item">
-                    <img src="images/project1.png" alt="E-commerce Website">
-                    <h3>E-commerce Website</h3>
-                    <p>A full-stack e-commerce website built with React and Node.js, featuring user authentication, product management, and payment integration.</p>
-                    <a href="https://github.com/YOUR_GITHUB/e-commerce-website" target="_blank" class="btn">View on GitHub</a>
-                </div>
-                <div class="project-item">
-                    <img src="images/project2.png" alt="Task Manager App">
-                    <h3>Task Manager App</h3>
-                    <p>A cross-platform mobile app developed using Flutter that helps users manage their daily tasks efficiently with a clean and intuitive UI.</p>
-                    <a href="https://github.com/YOUR_GITHUB/task-manager-app" target="_blank" class="btn">View on GitHub</a>
-                </div>
-                <!-- Add more projects as needed -->
-            </div>
-        </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <img src="images/contact.jpg" alt="Contact">
+        <p>WhatsApp: <a href="https://wa.me/+1234567890">+1234567890</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/yourprofile">instagram.com/yourprofile</a></p>
+        <p>Mobile: <a href="tel:+1234567890">+1234567890</a></p>
+        <a href="resume.pdf" download class="button">Download Resume</a>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Python Developer Portfolio</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
