@@ -1,15 +1,29 @@
-// script.js
+const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+const themeToggle = document.getElementById('theme-toggle');
 
-// Highlight active navigation link based on scroll position
+mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+
+// Dark mode toggle
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    themeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+});
+
+// Highlight current section in navigation
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-list li a');
+
 window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-links a');
-
     let current = '';
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 130; // Adjust based on nav height
-        if (pageYOffset >= sectionTop) {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (scrollY >= sectionTop - sectionHeight / 3) {
             current = section.getAttribute('id');
         }
     });
@@ -21,4 +35,3 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
