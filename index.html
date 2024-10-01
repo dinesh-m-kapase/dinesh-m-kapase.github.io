@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
+    <!-- Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (Optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1FbFpMxP1dC+f+8xMw7+T9NL7NMGgdHrP++R9GnjPj9ZzgZfE4Bn2FtBFjQJ6yLbKpStcQPw3dzPXjHwK5s0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,18 +20,30 @@
         </div>
     </header>
 
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Social Links Section -->
     <section class="social">
         <h2>Connect with me</h2>
         <div class="social-links">
             <a href="https://wa.me/YOUR_NUMBER" target="_blank">
-                <img src="images/whatsapp.png" alt="WhatsApp">
+                <i class="fab fa-whatsapp fa-2x"></i>
             </a>
             <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn">
+                <i class="fab fa-linkedin fa-2x"></i>
             </a>
             <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank">
-                <img src="images/instagram.png" alt="Instagram">
+                <i class="fab fa-instagram fa-2x"></i>
             </a>
         </div>
     </section>
@@ -79,21 +95,21 @@
         <div class="container">
             <h2>Experience</h2>
             <div class="experience-item">
-                <h3>Job Title at Company Name</h3>
-                <p>Year - Present</p>
+                <h3>Senior Developer at Company Name</h3>
+                <p>2020 - Present</p>
                 <ul>
-                    <li>Responsibility or achievement 1.</li>
-                    <li>Responsibility or achievement 2.</li>
-                    <li>Responsibility or achievement 3.</li>
+                    <li>Led a team of 5 developers to build scalable web applications.</li>
+                    <li>Implemented RESTful APIs using Node.js and Express.</li>
+                    <li>Optimized application performance, reducing load times by 30%.</li>
                 </ul>
             </div>
             <div class="experience-item">
-                <h3>Job Title at Company Name</h3>
-                <p>Year - Year</p>
+                <h3>Junior Developer at Company Name</h3>
+                <p>2018 - 2020</p>
                 <ul>
-                    <li>Responsibility or achievement 1.</li>
-                    <li>Responsibility or achievement 2.</li>
-                    <li>Responsibility or achievement 3.</li>
+                    <li>Developed responsive UI components with React.</li>
+                    <li>Collaborated with designers to improve user experience.</li>
+                    <li>Maintained codebase and performed regular code reviews.</li>
                 </ul>
             </div>
         </div>
@@ -105,16 +121,16 @@
             <h2>Projects</h2>
             <div class="projects-list">
                 <div class="project-item">
-                    <img src="images/project1.png" alt="Project 1">
-                    <h3>Project Title 1</h3>
-                    <p>Brief description of the project.</p>
-                    <a href="https://github.com/YOUR_GITHUB/project1" target="_blank" class="btn">View on GitHub</a>
+                    <img src="images/project1.png" alt="E-commerce Website">
+                    <h3>E-commerce Website</h3>
+                    <p>A full-stack e-commerce website built with React and Node.js, featuring user authentication, product management, and payment integration.</p>
+                    <a href="https://github.com/YOUR_GITHUB/e-commerce-website" target="_blank" class="btn">View on GitHub</a>
                 </div>
                 <div class="project-item">
-                    <img src="images/project2.png" alt="Project 2">
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of the project.</p>
-                    <a href="https://github.com/YOUR_GITHUB/project2" target="_blank" class="btn">View on GitHub</a>
+                    <img src="images/project2.png" alt="Task Manager App">
+                    <h3>Task Manager App</h3>
+                    <p>A cross-platform mobile app developed using Flutter that helps users manage their daily tasks efficiently with a clean and intuitive UI.</p>
+                    <a href="https://github.com/YOUR_GITHUB/task-manager-app" target="_blank" class="btn">View on GitHub</a>
                 </div>
                 <!-- Add more projects as needed -->
             </div>
