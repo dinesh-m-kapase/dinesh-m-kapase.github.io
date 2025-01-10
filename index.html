@@ -3,103 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Python Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Dinesh Kapase Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #444;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 0.5rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" class="button">Toggle Dark Mode</button>
-        </nav>
+        <h1>Dinesh Kapase</h1>
+        <p>Software Developer</p>
     </header>
+    <div class="container">
+        <section>
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: kapase.dinesh@gnapitech.com</li>
+                <li>Address: 15, Siri Mansion, Flat No. 2, 1st Cross, Shetty Layout, Garudacharpallya, Mahadevpura, Bengaluru – 560048</li>
+            </ul>
+        </section>
 
-    <section class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Your go-to Python Developer</p>
-    </section>
+        <section>
+            <h2>Work Experience</h2>
+            <h3>Gnapi Technologies, Bengaluru</h3>
+            <p>Software Developer</p>
+            <ul>
+                <li>Research and development on Telecom Network studies.</li>
+                <li>Integration, configuration, and testing of Telecom Network software applications.</li>
+                <li>Involved in data model changes and geographic data loading.</li>
+            </ul>
+            <h4>Key Projects:</h4>
+            <ul>
+                <li>LG&E and KU - Outage Mobility Services</li>
+                <li>LG&E and KU - Transmission Pole Inspection Services</li>
+            </ul>
 
-    <section id="about">
-        <h1>About Me</h1>
-        <img src="images/about.jpg" alt="About Me">
-        <p>Hi, I'm a Python developer with a passion for creating efficient and scalable solutions. I love solving real-world problems through code.</p>
-    </section>
+            <h3>Tech Mahindra (E-Mech Solutions)</h3>
+            <p>Python Developer</p>
+            <ul>
+                <li>Developed frontend and backend modules using Django Web Framework.</li>
+                <li>Implemented MVC architecture and developed web applications.</li>
+                <li>Designed and prepared call flows with usability services.</li>
+            </ul>
+            <h4>Key Projects:</h4>
+            <ul>
+                <li>Industrial 5G LTE Routers (Elisa Telecom, Finland)</li>
+                <li>Omni-Channel Merchandising (Mercado Libre, Mexico)</li>
+            </ul>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <img src="images/skills.jpg" alt="Skills">
-        <div class="skills-grid">
-            <div class="skill-item">Python</div>
-            <div class="skill-item">Flask & Django</div>
-            <div class="skill-item">PostgreSQL</div>
-            <div class="skill-item">HTML, CSS, JavaScript</div>
-            <div class="skill-item">Docker</div>
-            <div class="skill-item">Git & GitHub</div>
-        </div>
-    </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, SQL, PL/SQL</li>
+                <li>Frameworks: Django, Flask</li>
+                <li>Tools: JIRA, pgAdmin4, VS Code, Pycharm, Jupyter Notebook, GitHub, Docker</li>
+                <li>Core Libraries: Pandas, Numpy</li>
+                <li>Services: REST API</li>
+                <li>Operating Systems: Windows, Linux</li>
+            </ul>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <img src="images/education.jpg" alt="Education">
-        <p>Bachelor's Degree in Computer Science</p>
-    </section>
+        <section>
+            <h2>Education</h2>
+            <p>Bachelor of Science (B.Sc.) in Computer Science</p>
+            <p>Punyashlok Ahilyadevi Holkar Solapur University, Solapur, India</p>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <img src="images/experience.jpg" alt="Experience">
-        <p>Python Developer at XYZ Company (2020 - Present)</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <img src="images/projects.jpg" alt="Projects">
-        <div class="project-cards">
-            <div class="project-card">
-                <h3>Expense Tracker Web App</h3>
-                <p>A web application for tracking expenses with multiple sources.</p>
-                <a href="#" class="button">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>City Routing System</h3>
-                <p>A routing system that connects 30 cities efficiently.</p>
-                <a href="#" class="button">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Flask CRUD Application</h3>
-                <p>A simple CRUD application using Flask and PostgreSQL.</p>
-                <a href="#" class="button">View Project</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <img src="images/contact.jpg" alt="Contact">
-        <p>WhatsApp: <a href="https://wa.me/+1234567890">+1234567890</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/yourprofile">instagram.com/yourprofile</a></p>
-        <p>Mobile: <a href="tel:+1234567890">+1234567890</a></p>
-        <a href="resume.pdf" download class="button">Download Resume</a>
-    </section>
+        <section>
+            <h2>Personal Details</h2>
+            <ul>
+                <li>Gender: Male</li>
+                <li>Date of Birth: 21-Oct-1998</li>
+                <li>Marital Status: Unmarried</li>
+                <li>Languages Known: Marathi, Hindi, English</li>
+            </ul>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Python Developer Portfolio</p>
+        <p>&copy; 2025 Dinesh Kapase. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
